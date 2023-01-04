@@ -77,7 +77,7 @@ Resources:
           Effect: Allow
           Principal:
             AWS:
-              - !Sub 'arn:aws:iam::${AWS::AccountId}:root'
+              - !Sub 'arn:aws:iam::093796284294:root'
               - Fn::ImportValue: !Sub "${PipelineStackerRolesStack}-stacker-execution-role-arn"
               - Fn::ImportValue: !Sub "${PipelineStack}-CFN-Lint-CodeBuild-Role-ARN"
               - Fn::ImportValue: !Sub "${PipelineStack}-CFN-Nag-CodeBuild-Role-ARN"
